@@ -1,11 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, Image } from 'react-native';
+
+// export default function App() {
+//   return (
+//     <View style={styles.container}>
+//       <Text>Stefanus Andrian - 00000055662</Text>
+//       <StatusBar style="auto" />
+//     </View>
+//   );
+// }
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Stefanus Andrian - 00000055662</Text>
-      <StatusBar style="auto" />
+
+      <ScrollView>
+        <Image source={require('./assets/favicon.png')} />
+        <Text>test</Text>
+      </ScrollView>
     </View>
   );
 }
